@@ -1,0 +1,25 @@
+/* 
+
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+*/
+.shadow-none {
+    box-shadow: none!important;
+}
+
+.shadow-s {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.shadow-m {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.shadow-l {
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32)!important;
+}
+
+.shadow-xl {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}

@@ -1,0 +1,96 @@
+
+@import "breakpoint";
+
+$columns: 12 !default;
+$gutter: 20px !default;
+
+
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0 $gutter * 0.5;
+    // background-color: aqua;
+    // border: 1px solid black;
+}
+
+@for $i from 1 through $columns {
+    .s#{$i} {
+        width: $i / $columns * 100%;
+    }
+}
+
+@for $i from 1 through $columns {
+    .offset-s#{$i} {
+        margin-left: $i / $columns * 100%;
+    }
+}
+
+// TABLET
+@media screen and (min-width: $tablet) {
+    @for $i from 1 through $columns {
+        .m#{$i} {
+            width: $i / $columns * 100%;
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .offset-m#{$i} {
+            margin-left: $i / $columns * 100%;
+        }
+    }
+
+    .container {
+        width: 85%;
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+    @for $i from 1 through $columns {
+        .l#{$i} {
+            width: $i / $columns * 100%;
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .offset-l#{$i} {
+            margin-left: $i / $columns * 100%;
+        }
+    }
+
+    .container {
+        width: 70%;
+    }
+}
+
+// LARGE DESKTOP
+@media screen and (min-width: $largeDesktop) {
+    @for $i from 1 through $columns {
+        .xl#{$i} {
+            width: $i / $columns * 100%;
+        }
+    }
+
+    @for $i from 1 through $columns {
+        .offset-xl#{$i} {
+            margin-left: $i / $columns * 100%;
+        }
+    }
+
+    .container {
+        max-width: 1280px;
+        width: 90%;
+    }
+}

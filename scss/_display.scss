@@ -1,0 +1,57 @@
+@import "breakpoint";
+
+.d-none {
+    display: none !important;
+}
+
+// MOBILE
+@media screen and (max-width: $tablet) {
+    .d-s-none {
+        display: none !important;
+    }
+
+    .d-s-block {
+        display: block !important;
+    }
+
+}
+
+// TABLET
+@media screen and (min-width: $tablet) {
+    .d-m-none {
+        display: none !important;
+    }
+
+    .d-m-block {
+        display: block !important;
+    }
+}
+
+// DESKTOP
+@media screen and (min-width: $desktop) {
+    .d-l-none {
+        display: none !important;
+    }
+
+    .d-l-block {
+        display: block !important;
+    }
+}
+
+// LARGE DESKTOP
+@media screen and (min-width: $largeDesktop) {
+    .d-xl-none {
+        display: none !important;
+    }
+
+    .d-xl-block {
+        display: block !important;
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @media (min-width: $breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    }
+}

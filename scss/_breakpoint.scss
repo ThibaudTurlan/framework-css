@@ -1,0 +1,17 @@
+$mobile: 0;
+$tablet: 601px;
+$desktop: 993px;
+$largeDesktop : 1201px;
+
+// $infix: (s,m,l,xl);
+
+$grid-breakpoints: (s: $mobile, m:$tablet, l:$desktop, xl:$largeDesktop);
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min !=0, $min, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}
