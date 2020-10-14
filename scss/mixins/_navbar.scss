@@ -92,14 +92,3 @@
     }
 }
 
-.navbar {
-    @include navbar();
-}
-
-.navbar-white{
-    @include navbar-white();
-}
-
-.navbar-dark {
-    @include navbar-dark();
-}

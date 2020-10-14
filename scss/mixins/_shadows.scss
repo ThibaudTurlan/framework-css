@@ -1,0 +1,29 @@
+
+
+
+$box-shadow-none: none !important;
+$box-shadow-s: -1px 12px 36px -9px rgba(0, 0, 0, .32) !important;
+$box-shadow-m: 0 1px 3px rgba(0, 0, 0, .15) !important;
+$box-shadow-xl:-1px 12px 36px -9px rgba(0, 0, 0, .32) !important;
+
+@mixin shadow($box-shadow) {
+    box-shadow: $box-shadow;
+}
+
+@mixin shadow_type($type:'m') {
+    @if ($type=='s') {
+        @include shadow($box-shadow-s)
+    }
+
+    @if ($type=='m') {
+        @include shadow($box-shadow-m)
+    }
+
+    @if ($type=='xl') {
+        @include shadow($box-shadow-xl)
+    }
+
+    @if ($type=='none') {
+        @include shadow($box-shadow-none)
+    }
+}

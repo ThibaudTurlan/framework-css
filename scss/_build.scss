@@ -18,7 +18,7 @@
 
 
 
-
+// ALERT
 .alert {
     @include alert_type(); 
 }
@@ -27,6 +27,8 @@
     @include alert_type("danger"); 
 }
 
+
+// BTN
 .btn {
     @include btn_type();
 }
@@ -43,3 +45,38 @@
     @include btn-outline
 }
 
+
+// SHADOW
+.shadow-none {
+    @include shadow_type("none");
+}
+
+.shadow-s {
+    @include shadow_type("s");
+}
+
+.shadow-m {
+    @include shadow_type("m");
+}
+
+.shadow-l {
+    @include shadow_type("l");
+}
+
+.shadow-xl {
+    @include shadow_type("xl");
+}
+
+
+// NAVBAR
+.navbar {
+    @include navbar();
+}
+
+.navbar-white{
+    @include navbar-white();
+}
+
+.navbar-dark {
+    @include navbar-dark();
+}
