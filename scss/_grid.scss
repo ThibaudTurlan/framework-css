@@ -5,35 +5,41 @@ $columns: 12 !default;
 $gutter: 20px !default;
 
 
-
-.container {
+@mixin container($width: 100%, $max-width: 1280px) {
     margin: 0 auto;
+    max-width: $max-width;
 }
 
-.row {
+@mixin row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.col {
+@mixin col {
     flex-grow: 0;
     flex-shrink: 0;
     box-sizing: border-box;
     padding: 0 $gutter * 0.5;
-    // background-color: aqua;
-    // border: 1px solid black;
+}
+
+@mixin  cols_width($width: 1, $columns: $columns) {
+    width: $width / $columns * 100%;
+}
+
+@mixin offset($cols: 1, $columns: $columns) {
+    margin-left: $cols / $columns * 100%;
 }
 
 @for $i from 1 through $columns {
     .s#{$i} {
-        width: $i / $columns * 100%;
+        @include cols_width($i);
     }
 }
 
 @for $i from 1 through $columns {
     .offset-s#{$i} {
-        margin-left: $i / $columns * 100%;
+        @include offset($i);
     }
 }
 
@@ -41,18 +47,20 @@ $gutter: 20px !default;
 @media screen and (min-width: $tablet) {
     @for $i from 1 through $columns {
         .m#{$i} {
-            width: $i / $columns * 100%;
+            @include cols_width($i);
+
         }
     }
 
     @for $i from 1 through $columns {
         .offset-m#{$i} {
-            margin-left: $i / $columns * 100%;
+            @include cols_width($i);
+            @include offset($i);
         }
     }
 
     .container {
-        width: 85%;
+        @include container(85%);
     }
 }
 
@@ -60,18 +68,19 @@ $gutter: 20px !default;
 @media screen and (min-width: $desktop) {
     @for $i from 1 through $columns {
         .l#{$i} {
-            width: $i / $columns * 100%;
+
+            @include cols_width($i);
         }
     }
 
     @for $i from 1 through $columns {
         .offset-l#{$i} {
-            margin-left: $i / $columns * 100%;
+            @include offset($i);
         }
     }
 
     .container {
-        width: 70%;
+        @include container(70%);
     }
 }
 
@@ -79,18 +88,17 @@ $gutter: 20px !default;
 @media screen and (min-width: $largeDesktop) {
     @for $i from 1 through $columns {
         .xl#{$i} {
-            width: $i / $columns * 100%;
+            @include cols_width($i);
         }
     }
 
     @for $i from 1 through $columns {
         .offset-xl#{$i} {
-            margin-left: $i / $columns * 100%;
+            @include offset($i);
         }
     }
-
+    
     .container {
-        max-width: 1280px;
-        width: 90%;
+        @include container(90%);
     }
 }

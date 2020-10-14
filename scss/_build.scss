@@ -1,0 +1,45 @@
+.col {
+    @include col();
+    background-color: #ff6347;
+    border: 1px solid black;
+}
+
+.container {
+    @include container;
+}
+
+.row {
+    @include row;
+}
+
+.offset {
+    @include offset;
+}
+
+
+
+
+.alert {
+    @include alert_type(); 
+}
+
+.alert-danger {
+    @include alert_type("danger"); 
+}
+
+.btn {
+    @include btn_type();
+}
+
+.btn-danger {
+    @include btn_type("danger");
+}
+
+.btn-primary {
+    @include btn_type("primary");
+}
+
+.btn-outline {
+    @include btn-outline
+}
+

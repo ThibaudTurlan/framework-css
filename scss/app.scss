@@ -1,7 +1,16 @@
 
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins/navbar.scss";
+@import "mixins/button.scss";
+@import "mixins/alert.scss";
 
 @import "grid";
 @import "display";
 @import "shadows";
 @import "spacing";
+
+@import "build";
+
+
 

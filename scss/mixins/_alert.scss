@@ -1,0 +1,43 @@
+$color-info: #bebebe !default;
+$color-danger: #ff7682 !default;
+$color-warning: #dab12a !default;
+$color-success: #1a5728 !default;
+
+// %alert-headding {
+
+// }
+
+@mixin alert() {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    @include alert-color();
+}
+
+@mixin alert-color($color: $color-info) {
+    color: darken($color, 30%);
+    background-color: $color;
+    border-color: $color;
+}
+
+@mixin alert_type($type:'info') {
+    @include alert();
+
+    @if ($type=='info') {
+        @include alert-color($color-info)
+    }
+
+    @if ($type=='danger') {
+        @include alert-color($color-danger)
+    }
+
+    @if ($type=='success') {
+        @include alert-color($color-success)
+    }
+
+    @if ($type=='warning') {
+        @include alert-color($color-warning)
+    }
+}
