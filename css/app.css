@@ -10,51 +10,51 @@ body {
 }
 
 .s1 {
-  width: 8.3333333333%;
+  flex-basis: 8.3333333333%;
 }
 
 .s2 {
-  width: 16.6666666667%;
+  flex-basis: 16.6666666667%;
 }
 
 .s3 {
-  width: 25%;
+  flex-basis: 25%;
 }
 
 .s4 {
-  width: 33.3333333333%;
+  flex-basis: 33.3333333333%;
 }
 
 .s5 {
-  width: 41.6666666667%;
+  flex-basis: 41.6666666667%;
 }
 
 .s6 {
-  width: 50%;
+  flex-basis: 50%;
 }
 
 .s7 {
-  width: 58.3333333333%;
+  flex-basis: 58.3333333333%;
 }
 
 .s8 {
-  width: 66.6666666667%;
+  flex-basis: 66.6666666667%;
 }
 
 .s9 {
-  width: 75%;
+  flex-basis: 75%;
 }
 
 .s10 {
-  width: 83.3333333333%;
+  flex-basis: 83.3333333333%;
 }
 
 .s11 {
-  width: 91.6666666667%;
+  flex-basis: 91.6666666667%;
 }
 
 .s12 {
-  width: 100%;
+  flex-basis: 100%;
 }
 
 .offset-s1 {
@@ -107,110 +107,110 @@ body {
 
 @media screen and (min-width: 601px) {
   .m1 {
-    width: 8.3333333333%;
+    flex-basis: 8.3333333333%;
   }
 
   .m2 {
-    width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
   }
 
   .m3 {
-    width: 25%;
+    flex-basis: 25%;
   }
 
   .m4 {
-    width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
   }
 
   .m5 {
-    width: 41.6666666667%;
+    flex-basis: 41.6666666667%;
   }
 
   .m6 {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .m7 {
-    width: 58.3333333333%;
+    flex-basis: 58.3333333333%;
   }
 
   .m8 {
-    width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
   }
 
   .m9 {
-    width: 75%;
+    flex-basis: 75%;
   }
 
   .m10 {
-    width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
   }
 
   .m11 {
-    width: 91.6666666667%;
+    flex-basis: 91.6666666667%;
   }
 
   .m12 {
-    width: 100%;
+    flex-basis: 100%;
   }
 
   .offset-m1 {
-    width: 8.3333333333%;
+    flex-basis: 8.3333333333%;
     margin-left: 8.3333333333%;
   }
 
   .offset-m2 {
-    width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
     margin-left: 16.6666666667%;
   }
 
   .offset-m3 {
-    width: 25%;
+    flex-basis: 25%;
     margin-left: 25%;
   }
 
   .offset-m4 {
-    width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
     margin-left: 33.3333333333%;
   }
 
   .offset-m5 {
-    width: 41.6666666667%;
+    flex-basis: 41.6666666667%;
     margin-left: 41.6666666667%;
   }
 
   .offset-m6 {
-    width: 50%;
+    flex-basis: 50%;
     margin-left: 50%;
   }
 
   .offset-m7 {
-    width: 58.3333333333%;
+    flex-basis: 58.3333333333%;
     margin-left: 58.3333333333%;
   }
 
   .offset-m8 {
-    width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
     margin-left: 66.6666666667%;
   }
 
   .offset-m9 {
-    width: 75%;
+    flex-basis: 75%;
     margin-left: 75%;
   }
 
   .offset-m10 {
-    width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
     margin-left: 83.3333333333%;
   }
 
   .offset-m11 {
-    width: 91.6666666667%;
+    flex-basis: 91.6666666667%;
     margin-left: 91.6666666667%;
   }
 
   .offset-m12 {
-    width: 100%;
+    flex-basis: 100%;
     margin-left: 100%;
   }
 
@@ -221,51 +221,51 @@ body {
 }
 @media screen and (min-width: 993px) {
   .l1 {
-    width: 8.3333333333%;
+    flex-basis: 8.3333333333%;
   }
 
   .l2 {
-    width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
   }
 
   .l3 {
-    width: 25%;
+    flex-basis: 25%;
   }
 
   .l4 {
-    width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
   }
 
   .l5 {
-    width: 41.6666666667%;
+    flex-basis: 41.6666666667%;
   }
 
   .l6 {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .l7 {
-    width: 58.3333333333%;
+    flex-basis: 58.3333333333%;
   }
 
   .l8 {
-    width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
   }
 
   .l9 {
-    width: 75%;
+    flex-basis: 75%;
   }
 
   .l10 {
-    width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
   }
 
   .l11 {
-    width: 91.6666666667%;
+    flex-basis: 91.6666666667%;
   }
 
   .l12 {
-    width: 100%;
+    flex-basis: 100%;
   }
 
   .offset-l1 {
@@ -323,51 +323,51 @@ body {
 }
 @media screen and (min-width: 1201px) {
   .xl1 {
-    width: 8.3333333333%;
+    flex-basis: 8.3333333333%;
   }
 
   .xl2 {
-    width: 16.6666666667%;
+    flex-basis: 16.6666666667%;
   }
 
   .xl3 {
-    width: 25%;
+    flex-basis: 25%;
   }
 
   .xl4 {
-    width: 33.3333333333%;
+    flex-basis: 33.3333333333%;
   }
 
   .xl5 {
-    width: 41.6666666667%;
+    flex-basis: 41.6666666667%;
   }
 
   .xl6 {
-    width: 50%;
+    flex-basis: 50%;
   }
 
   .xl7 {
-    width: 58.3333333333%;
+    flex-basis: 58.3333333333%;
   }
 
   .xl8 {
-    width: 66.6666666667%;
+    flex-basis: 66.6666666667%;
   }
 
   .xl9 {
-    width: 75%;
+    flex-basis: 75%;
   }
 
   .xl10 {
-    width: 83.3333333333%;
+    flex-basis: 83.3333333333%;
   }
 
   .xl11 {
-    width: 91.6666666667%;
+    flex-basis: 91.6666666667%;
   }
 
   .xl12 {
-    width: 100%;
+    flex-basis: 100%;
   }
 
   .offset-xl1 {
