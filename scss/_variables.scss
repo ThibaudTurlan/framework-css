@@ -1,8 +1,25 @@
 
+$mobile: 0;
+$tablet: 601px;
+$desktop: 993px;
+$largeDesktop : 1201px;
 
+$columns: 12 !default;
+$gutter: 20px !default;
 
-$color-info: #bebebe;
-$color-danger: #da3d4a;
-$color-warning: #dab12a;
-$color-success: #1a5728;
-$color-primary: #7451eb;
+$bg_navbar_dark: #323b47; 
+$color_navbar_dark: #5d718e;
+$color_dark_link: #5d718e;
+
+$bg_navbar_white: #FFFFFF; 
+$color_navbar_white: #000000; 
+$color_white_link: #666666;
+
+$color-info: #bebebe !default;
+$color-danger: #ff7682 !default;
+$color-warning: #dab12a !default;
+$color-success: #1a5728 !default;
+$color-primary: #7451eb !default;
+
+$bg_col: #7a7a7a;
+$color_col: #000000;

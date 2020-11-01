@@ -1,8 +1,8 @@
-$color-info: #bebebe !default;
-$color-danger: #ff7682 !default;
-$color-warning: #dab12a !default;
-$color-success: #1a5728 !default;
-$color-primary: #7451eb !default;
+// $color-info: #bebebe !default;
+// $color-danger: #ff7682 !default;
+// $color-warning: #dab12a !default;
+// $color-success: #1a5728 !default;
+// $color-primary: #7451eb !default;
 
 
 @mixin btn ($color: rgb(168, 168, 168)) {
@@ -29,9 +29,9 @@ $color-primary: #7451eb !default;
     @include user-select();
 }
 
-@mixin btn-outline() {
+@mixin btn-outline($color: $color-danger) {
     @include btn();
-    @include btn-color($color-primary);
+    @include btn-color($color);
     background-color: transparent;
     background-image: none;
 }

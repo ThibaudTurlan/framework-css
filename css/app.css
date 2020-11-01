@@ -564,8 +564,8 @@ body {
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 0 10px;
-  background-color: #ff6347;
-  border: 1px solid black;
+  background-color: #7a7a7a;
+  border: 1px solid #000000;
 }
 
 .container {
@@ -606,9 +606,9 @@ body {
   color: #727272;
   background-color: #bebebe;
   border-color: #bebebe;
-  color: #6a141b;
-  background-color: #da3d4a;
-  border-color: #da3d4a;
+  color: #dc0013;
+  background-color: #ff7682;
+  border-color: #ff7682;
 }
 
 .btn {
@@ -662,9 +662,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #6a141b;
-  background-color: #da3d4a;
-  border-color: #da3d4a;
+  color: #dc0013;
+  background-color: #ff7682;
+  border-color: #ff7682;
 }
 .btn-danger:not(:disabled):not(.disabled) {
   cursor: pointer;
@@ -802,7 +802,7 @@ body {
   z-index: 1;
 }
 .navbar-white nav {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 .navbar-white nav ul {
   display: flex;
@@ -820,7 +820,7 @@ body {
 }
 .navbar-white nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .navbar-white nav ul li {
   text-align: center;
