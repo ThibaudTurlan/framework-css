@@ -63,13 +63,22 @@ Framewok CSS by Thib
 
     <a class="btn btn-primary" href="#" role="button">Link</a>
     <button class="btn btn-primary" type="submit">Button</button>
-
+----
 **bouton outline** 
+**btn-outline**
+**Exemple** 
+    <button class="btn-outline">button</button>
+---- 
 **les tailles bouton**
 
 * **.btn-xl**
 * **.btn-s** 
 
+**Exemple**
+
+    <button class="btn btn-s">button</button>
+    <button class="btn btn-xl">button</button>
+----
 ## Les Ombres
 
 **.shadow-s**
