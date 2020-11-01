@@ -65,7 +65,9 @@ Framewok CSS by Thib
     <button class="btn btn-primary" type="submit">Button</button>
 ----
 **bouton outline** 
-**btn-outline**
+
+**.btn-outline**
+
 **Exemple** 
     `<button class="btn-outline">button</button>`
 ---- 
