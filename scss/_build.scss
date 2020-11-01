@@ -33,6 +33,14 @@
     @include btn_type();
 }
 
+.btn-xl {
+    @include btn-xl();
+}
+
+.btn-s {
+    @include btn-s();
+}
+
 .btn-danger {
     @include btn_type("danger");
 }
@@ -45,6 +53,13 @@
     @include btn-outline($color-primary)
 }
 
+.rounded {
+    @include rounded();
+}
+
+.border {
+    @include border();
+}
 
 // SHADOW
 .shadow-none {

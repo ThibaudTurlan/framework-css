@@ -5,13 +5,14 @@
 // $color-primary: #7451eb !default;
 
 
-@mixin btn ($color: rgb(168, 168, 168)) {
+@mixin btn ($color: $color-primary) {
     display: inline-block;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    background-color: $color;
+    font-size: 1rem;
+    // background-color: $color;
     border: 1px solid transparent;
     &:not(:disabled):not(.disabled) {
         cursor: pointer;
@@ -19,7 +20,9 @@
     &:focus {
         border-color:darken($color, 10%); 
     }
+    
     outline: none;
+    text-decoration: none;
     // transition: color .15s ease-in-out,
     // background-color .15s ease-in-out,
     // border-color .15s ease-in-out,
@@ -31,9 +34,13 @@
 
 @mixin btn-outline($color: $color-danger) {
     @include btn();
-    @include btn-color($color);
+    @include btn-color($color, $color);
     background-color: transparent;
     background-image: none;
+
+    &:hover {
+        @include btn-color($color, white);
+    }
 }
 
 @mixin btn-size($padding: .25rem .5rem, $font-size: .875rem, $line-height: 1.5, $border-radius: .2rem) {
@@ -43,13 +50,29 @@
     border-radius: $border-radius;
 }
 
-@mixin btn-color($color: $color-info) {
-    color: darken($color, 30%);
-    background-color: $color;
-    border-color: $color;
+@mixin btn-color($bg: $color-primary, $color: white) {
+    color: $color;
+    background-color: $bg;
+    border-color: $bg;
+
+    &:hover {
+        background-color: darken($bg, 5%);
+    }
+
+    
 }
 
-@mixin btn_type($type:'info') {
+@mixin btn-s() {
+    @include btn-size(.25rem .5rem, .775rem!important);
+
+}
+
+@mixin btn-xl() {
+    @include btn-size(.5rem 1rem!important, 1.25rem!important);
+
+}
+
+@mixin btn_type($type:'primary') {
     @include btn();
 
     @if ($type=='info') {
