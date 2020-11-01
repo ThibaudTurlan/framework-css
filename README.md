@@ -69,7 +69,8 @@ Framewok CSS by Thib
 **.btn-outline**
 
 **Exemple** 
-    `<button class="btn-outline">button</button>`
+
+    <button class="btn-outline">button</button>
 ---- 
 **les tailles bouton**
 
