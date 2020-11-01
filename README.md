@@ -47,16 +47,16 @@ Framewok CSS by Thib
 * **.navbar-white**
 * **.navbar-dark**
 
-    <div class="navbar-white">
-        <nav>
-            <ul>
-                <li><a href="#">maison</a></li>
-                <li><a href="#">niche</a></li>
-                <li><a href="#">garage</a></li>
-                <li><a href="#">bistrot</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="navbar-white">
+            <nav>
+                <ul>
+                    <li><a href="#">maison</a></li>
+                    <li><a href="#">niche</a></li>
+                    <li><a href="#">garage</a></li>
+                    <li><a href="#">bistrot</a></li>
+                </ul>
+            </nav>
+        </div>
 
 ## Les Boutons
 > La classe `.btn` est conçues pour être utilisées avec la balise  `<button>`. Vous pouvez également utiliser cette classe sur des balise `<a>`.
@@ -67,7 +67,7 @@ Framewok CSS by Thib
 **bouton outline** 
 **btn-outline**
 **Exemple** 
-    <button class="btn-outline">button</button>
+    `<button class="btn-outline">button</button>`
 ---- 
 **les tailles bouton**
 
